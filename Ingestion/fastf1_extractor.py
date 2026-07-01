@@ -1,10 +1,10 @@
 """
-ingestion/fastf1_extractor.py
+Ingestion/fastf1_extractor.py
 Extracts structured session-level data (quali laps, race laps, telemetry)
 using the FastF1 Python library with local caching.
 
 Usage:
-    python -m ingestion.fastf1_extractor --season 2025 --rounds 1 5
+    python -m Ingestion.fastf1_extractor --season 2025 --rounds 1 5
 """
 import argparse
 from pathlib import Path

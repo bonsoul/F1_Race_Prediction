@@ -1,5 +1,5 @@
 """
-ingestion/openf1_poller.py
+Ingestion/openf1_poller.py
 Polls the OpenF1 API during race weekends for near-real-time data:
   - Session info  (which sessions are live/upcoming)
   - Driver info   (number → code mapping)
@@ -12,10 +12,10 @@ Can be run as a one-off pull or scheduled during a race weekend.
 
 Usage:
     # Pull latest session data right now
-    python -m ingestion.openf1_poller --mode pull
+    python -m Ingestion.openf1_poller --mode pull
 
     # Schedule polling every 60s during a live race weekend
-    python -m ingestion.openf1_poller --mode schedule --interval 60
+    python -m Ingestion.openf1_poller --mode schedule --interval 60
 """
 import argparse
 import json
