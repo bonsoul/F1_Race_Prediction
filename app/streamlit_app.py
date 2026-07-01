@@ -377,7 +377,7 @@ def tab_live():
         st.info(
             "No OpenF1 data found locally.\n\n"
             "Run the poller during a race weekend:\n"
-            "```\npython -m ingestion.openf1_poller --mode pull\n```"
+            "```\npython -m Ingestion.openf1_poller --mode pull\n```"
         )
         return
 
