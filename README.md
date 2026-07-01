@@ -13,7 +13,7 @@ f1-predict/
 ├── pipeline.py                 # End-to-end orchestrator
 ├── requirements.txt
 │
-├── ingestion/
+├── Ingestion/
 │   ├── ergast_loader.py        # Ergast API → Parquet (historical 2021–2025)
 │   ├── fastf1_extractor.py     # FastF1 session extractor (lap times, weather)
 │   └── openf1_poller.py        # OpenF1 live poller (race-week telemetry)
@@ -83,7 +83,7 @@ Run this on a race weekend to pull latest OpenF1 data:
 python pipeline.py --race-week
 
 # Or schedule a continuous poll every 60 seconds during a live race
-python -m ingestion.openf1_poller --mode schedule --interval 60
+python -m Ingestion.openf1_poller --mode schedule --interval 60
 ```
 
 ---
